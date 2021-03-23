@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_server"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/setBot"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:onClick="onClick"
+        android:text="Set Bot"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/connect_server"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/joystickView"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/connect_server"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/white"
+        android:onClick="onClick"
+        android:text="Connect"
+        app:layout_constraintLeft_toRightOf="@id/setBot"
+        app:layout_constraintRight_toLeftOf="@id/noop1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/joystickView"/>
+
+
+        <LinearLayout
+            android:id="@+id/msgList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edMessage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="5dp"
+        android:text="Message from Client"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_data"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"
+        android:text="Status Check "
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/noop1"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Clear Hold !"
+        app:layout_constraintLeft_toRightOf="@id/connect_server"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/joystickShot"/>
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView
+        android:id="@+id/joystickView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:JV_backgroundColor="#8BC34A"
+        app:JV_borderColor="#5E7030"
+        app:JV_borderWidth="4dp"
+        app:JV_buttonColor="#425C23"
+        app:JV_buttonSizeRatio="40%"
+        app:JV_fixedCenter="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/joystickShot"
+        app:layout_constraintTop_toBottomOf="@id/setBot" />
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView
+        android:id="@+id/joystickShot"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:JV_backgroundColor="#009688"
+        app:JV_borderColor="#016A60"
+        app:JV_borderWidth="4dp"
+        app:JV_buttonColor="#004942"
+        app:JV_buttonSizeRatio="40%"
+        app:JV_fixedCenter="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/joystickView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noop1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

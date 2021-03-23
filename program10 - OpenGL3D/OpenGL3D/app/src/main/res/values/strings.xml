@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">OpenGL3D</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">3D Objects</string>
+    <string name="nav_header_subtitle">hkashgar@uwyo.edu</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Heart</string>
+    <string name="menu_gallery">Twisty platform</string>
+    <string name="menu_slideshow">Star</string>
+
+    <string name="home_second">Home Second</string>
+</resources>

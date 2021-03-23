@@ -1,0 +1,2 @@
+rootProject.name='OpenGL3D'
+include ':app'

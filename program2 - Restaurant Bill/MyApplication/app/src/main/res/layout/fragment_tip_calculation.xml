@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tip_Calculation_Fragment">
+
+
+    <EditText
+        android:id="@+id/Bill_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:layout_marginTop="50dp"
+        android:hint="Enter the bill amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@id/Tip_Percentage_EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/Tip_Percentage_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:hint="Enter Tip Percentage"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@id/Split_EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bill_EditText" />
+
+    <Switch
+        android:id="@+id/Split_Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Split"
+        app:layout_constraintBottom_toTopOf="@id/radio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Split_EditText"
+        app:layout_constraintTop_toBottomOf="@+id/Tip_Percentage_EditText" />
+
+    <EditText
+        android:id="@+id/Split_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:ems="10"
+        android:hint="Enter Split - Default split is 1"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@id/radio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tip_Percentage_EditText" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@id/button_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Split_EditText">
+
+        <RadioButton
+            android:id="@+id/radio_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rounding tip" />
+
+        <RadioButton
+            android:id="@+id/radio_total_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rounding total bill" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="153dp"
+        android:layout_height="46dp"
+        android:background="@color/colorAccent"
+        android:padding="2dp"
+        android:text="Calculate"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

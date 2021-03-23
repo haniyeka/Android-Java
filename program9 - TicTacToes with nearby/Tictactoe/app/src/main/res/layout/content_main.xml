@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/oneplayer"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="110dp"
+        android:onClick="Oneplayer"
+        android:text="One Player" />
+
+
+    <Button
+        android:id="@+id/twoplayer"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp"
+        android:onClick="TwoPlayer"
+        android:text="Two Players" />
+
+    <Button
+        android:id="@+id/twoplayerwithnearby"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp"
+        android:onClick="Twoolayer_withNearbys"
+        android:text="Two Players \n(with Nearby)" />
+
+
+</LinearLayout>

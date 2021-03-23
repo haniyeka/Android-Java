@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tic Toc Toe</string>
+    <string name="One_Player" />
+    <string name="One_Playerr" />
+    <string name="title_activity_find_player">FindPlayerActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="FindPlayer">Find Player</string>
+    <string name="Discovery">Allow to be discovered</string>
+
+    <string name="FindPlayerFragment">Find player</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string-array name="players">
+        <item>Player X</item>
+        <item>Player O</item>
+    </string-array>
+</resources>
